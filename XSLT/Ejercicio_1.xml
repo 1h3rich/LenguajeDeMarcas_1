@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Ejercicio_4.xsl"?>   
+<inventario>
+    <producto codigo="PROD-01">
+        <peso unidad="kg">22</peso>
+        <nombre>Servidor</nombre>
+        <lugar edificio="Central">
+            <aula>101</aula>
+        </lugar>
+    </producto>
+    <producto codigo="PROD-02">
+        <peso unidad="kg">10</peso>
+        <nombre>Ordenador</nombre>
+        <lugar edificio="Central">
+            <aula>102</aula>
+        </lugar>
+    </producto>
+    <producto codigo="PROD-03">
+        <peso unidad="g">200</peso>
+        <nombre>Ratón Inalámbrico</nombre>
+        <lugar edificio="Anexo">
+            <aula>20</aula>
+        </lugar>
+    </producto>
+</inventario>

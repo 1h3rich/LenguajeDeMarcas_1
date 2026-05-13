@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE efemerides[
+    <!ELEMENT efemerides (efemeride)>
+    <!ELEMENT efemeride (fecha, hecho)>
+    <!ELEMENT fecha (#PCDATA)> 
+    <!ELEMENT hecho (#PCDATA)>
+]>
+
+<efemerides>
+    <efemeride>
+        <fecha>1492</fecha>
+        <hecho>Descubrimiento de america</hecho>
+    </efemeride>
+</efemerides>
+
+<!-- Falta inicializar fecha y hecho como pcdata o date...-->

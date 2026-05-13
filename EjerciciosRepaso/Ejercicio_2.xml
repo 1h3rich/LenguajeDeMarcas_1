@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises [
+    <!ELEMENT paises (pais)> <!-- Falta esta linea -->
+    <!ELEMENT pais (nombre, unionEuropea, otan)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT unionEuropea EMPTY> <!-- Sobran los parentesis -->
+    <!ELEMENT otan EMPTY>
+]>
+<paises>
+    <pais>
+        <nombre>España</nombre>
+        <unionEuropea></unionEuropea>
+        <otan></otan>
+    </pais>
+</paises>
+
+<!-- Correcciones -->
+
+<!-- Es necesario inicializar paises como pais-->
+<!-- Se eliminan los parentesis si no se quieren datos o se cambia el tipo de dato-->

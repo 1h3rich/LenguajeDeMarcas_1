@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sector>
+    <nombre>Peñón de Ifach</nombre>
+    <via>
+        <nombre>Fisura Diedro</nombre>
+        <aperturista>Juan Pérez</aperturista>
+        <materiales>
+            <material>friends</material>
+            <material>cintas express</material>
+            <material>casco</material>
+        </materiales>
+        <dificultad graduacion="francesa">6a+</dificultad>
+    </via>
+    <via>
+        <nombre>Arista Norte</nombre>
+        <aperturista>Laura Gómez</aperturista>
+        <materiales>
+            <material>casco</material>
+        </materiales>
+        <dificultad graduacion="USA">V</dificultad>
+    </via>
+</sector>

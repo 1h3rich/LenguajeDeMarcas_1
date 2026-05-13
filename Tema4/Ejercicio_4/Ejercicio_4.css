@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(131, 180, 243);
+}
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-left: 20px;
+  gap: 12px;
+}
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.orange {
+    color: rgb(229, 255, 0);
+    text-decoration: underline;
+}
+
+.green {
+    color: rgb(145, 0, 189);
+    text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  display: flex;            
+  gap: 8px;                 
+  background: #2f2f2f;     
+  border-radius: 4px;
+}
+
+nav ul li a{
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    background-color: pink;
+}
+
+
+.introduccion {
+    text-align: center;
+    margin-top: -60px;
+}
+.caja{
+    background-color: rgb(148, 148, 148);
+    max-width: 1000px;
+    width: 100%;
+    margin: 40px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.caja.azul {border: solid rgb(255, 251, 0) 6px;}
+.caja.naranja {border: solid rgb(182, 0, 167) 6px;}
+
+img{
+    max-width: 200px;
+}
+.logo{
+    border-radius: 10px;
+    margin: 5px;
+}
+.azul{
+    border: solid rgb(229, 255, 0) 6px;
+}
+.naranja{
+    border: solid rgb(155, 0, 121) 6px;
+}
+.derecha{
+    flex-direction: row-reverse;
+}
+.contenido{
+    margin-top: -20px;
+}
+footer{
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}

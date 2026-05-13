@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web de Pruebas DAW - Accesibilidad</title>
+  <style>
+    body { font-family: sans-serif; }
+
+    /* Contraste suficiente (en vez de #d1d1d1 sobre blanco) */
+    .texto-secundario { color: #595959; font-size: 0.9em; }
+
+    /* Botón real (el estilo se aplica al <button>) */
+    .boton-principal {
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 4px;
+      border: 0;
+      font: inherit;
+    }
+    .boton-principal:focus-visible,
+    a:focus-visible,
+    input:focus-visible {
+      outline: 3px solid #111;
+      outline-offset: 2px;
+    }
+
+    .campo-error { border: 2px solid #c40000; }
+
+    /* Texto de error accesible */
+    .error-texto {
+      color: #8a0000;
+      margin: 6px 0 0;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mi Tienda de Componentes</h1>
+    <h2>Ofertas del día</h2>
+  </header>
+
+  <!-- Imagen con alt -->
+  <img
+    src="https://via.placeholder.com/150"
+    width="150"
+    height="150"
+    alt="Imagen de oferta del día"
+  />
+
+  <p class="texto-secundario">Publicado hace 2 minutos. Haz clic abajo para comprar.</p>
+
+  <!-- Botón accesible (teclado + semántica) -->
+  <button type="button" class="boton-principal" onclick="alert('¡Comprado!')">
+    Comprar ahora
+  </button>
+
+  <hr />
+
+  <form novalidate>
+    <fieldset>
+      <legend>Suscríbete a la newsletter</legend>
+
+      <!-- Input con label, tipo email, autocomplete, y ayuda/error -->
+      <label for="email">Email</label><br />
+      <input
+        id="email"
+        name="email"
+        type="email"
+        autocomplete="email"
+        required
+        placeholder="nombre@ejemplo.com"
+        class="campo-error"
+        aria-invalid="true"
+        aria-describedby="email-ayuda email-error"
+      />
+      <p id="email-ayuda" class="texto-secundario">Usa un email válido. Ejemplo: nombre@ejemplo.com</p>
+      <p id="email-error" class="error-texto" role="alert">El email es obligatorio y debe ser válido.</p>
+
+      <button type="submit" class="boton-principal" style="margin-top:10px;">
+        Suscribirme
+      </button>
+    </fieldset>
+  </form>
+
+  <!-- Enlace con texto descriptivo (no "aquí") -->
+  <p>
+    Para más info, consulta
+    <a href="#info">la página de información</a>.
+  </p>
+
+  <!-- Destino del ancla para evitar href="#" -->
+  <section id="info" aria-label="Información">
+    <p>Información adicional sobre productos y condiciones.</p>
+  </section>
+
+</body>
+</html>

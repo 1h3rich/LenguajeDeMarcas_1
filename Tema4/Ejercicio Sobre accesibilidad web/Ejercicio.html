@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Web de Pruebas DAW - Accesibilidad</title>
+    <style>
+        body { font-family: sans-serif; }
+
+        .texto-secundario { color: black; font-size: 0.8em; }
+        
+        .boton-falso {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .campo-error { border: 2px solid red; }
+    </style>
+</head>
+<body>
+
+    <h1>Mi Tienda de Componentes</h1>
+    <h4>Ofertas del día</h4>
+
+    <img src="https://via.placeholder.com/150" width="150">
+
+    <p class="texto-secundario">Publicado hace 2 minutos. Haz clic abajo para comprar.</p>
+
+    <div class="boton-falso" onclick="alert('Comprado!')">
+        Comprar ahora
+    </div>
+
+    <br><br>
+
+    <form>
+        <p>Suscríbete a la newsletter:</p>
+        <input type="text" placeholder="Escribe tu email aquí" class="campo-error">
+        </form>
+
+    <p>Para más info, pulsa <a href="#">aquí</a>.</p>
+
+</body>
+</html>
+
